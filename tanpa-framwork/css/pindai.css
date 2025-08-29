@@ -1,0 +1,181 @@
+/* Reset dan Global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #f4f4f9, #e9ecef);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Menjamin footer berada di bawah halaman */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #ff6f61;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+/* Kontainer Form */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px; /* Memberikan ruang untuk footer */
+}
+
+/* Heading dan paragraf */
+h2 {
+    color: #ff6f61;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* Tombol */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ff6f61;
+    color: white;
+    border: 2px solid #ff6f61;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.button:hover {
+    background-color: white;
+    color: #ff6f61;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.button:active {
+    background-color: #e55b50;
+    color: white;
+    transform: translateY(2px); /* Efek saat tombol ditekan */
+}
+
+/* Notifikasi */
+.notification {
+    background-color: #ffefba;
+    color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 20px 0;
+    display: inline-block;
+    animation: fadeIn 1s ease-in;
+}
+
+/* Ilustrasi */
+.illustration {
+    margin: 20px 0;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.illustration img:hover {
+    transform: scale(1.05); /* Efek zoom saat gambar di-hover */
+}
+
+/* Footer */
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: auto; /* Ini memastikan footer tetap di bawah halaman */
+}
+
+/* Animasi fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsivitas: Mengoptimalkan tampilan pada layar lebih kecil */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 90%; /* Kontainer lebih fleksibel di perangkat kecil */
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    .button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+
+    .illustration img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,123 @@
+/* Reset standar untuk konsistensi antar browser */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Gaya umum untuk body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #f4f4f9, #e9ecef);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Agar body memenuhi halaman vertikal */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #ff6f61;
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Kontainer utama */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px; /* Untuk memberi ruang footer */
+}
+
+/* Judul kontainer */
+h2 {
+    color: #ff6f61;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Gaya tombol utama */
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: #ff6f61;
+    color: white;
+    border: 2px solid #ff6f61;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+/* Efek hover pada tombol */
+.button:hover {
+    background-color: white;
+    color: #ff6f61;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Agar footer selalu di bawah */
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Gaya gambar ilustrasi */
+.illustration {
+    margin: 20px 0;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    /* Mengurangi ukuran header di layar kecil */
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    /* Menyesuaikan ukuran kontainer agar lebih responsif */
+    .container {
+        padding: 15px;
+    }
+
+    /* Mengurangi ukuran tombol di perangkat mobile */
+    .button {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+
+    /* Menyesuaikan gambar ilustrasi pada layar kecil */
+    .illustration img {
+        border-radius: 10px; /* Lebih kecil pada layar kecil */
+    }
+}

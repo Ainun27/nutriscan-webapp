@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pindai - NutriScan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/hasilManual.css">
+</head>
+<body>
+    <header>
+        <h1>Hasil Pindai</h1>
+    </header>
+
+    <div class="result-container">
+        <h2>Informasi Produk</h2>
+        <p><strong>Barcode:</strong> <span id="barcode">-</span></p>
+        <p><strong>Nama Produk:</strong> <span id="productName">-</span></p>
+        <p><strong>Gula:</strong> <span id="productSugars">-</span> gram</p>
+        <p><strong>Kalori:</strong> <span id="productCalories">-</span> kcal</p>
+        <div id="sugarWarning" class="warning"></div>
+        <div id="calorieWarning" class="warning"></div>
+    </div>
+
+    <button class="button" onclick="saveToDatabase()">Simpan ke Riwayat</button>
+    <button class="button" onclick="window.location.href='dashboard.html'">Kembali ke Beranda</button>
+
+    <div class="history-container">
+        <h3>Riwayat Pemindaian</h3>
+        <ul id="historyList">
+            <!-- Riwayat akan ditampilkan di sini -->
+        </ul>
+    </div>
+
+    <footer>
+        &copy; 2024 NutriScan
+    </footer>
+
+    <script src="/javascript/hasilManual.js"></script> 
+</body>
+</html>

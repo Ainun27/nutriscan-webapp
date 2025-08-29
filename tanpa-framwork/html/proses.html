@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proses Pemindaian - NutriScan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/proses.css">
+    <script src="https://cdn.jsdelivr.net/npm/quagga@0.12.1/dist/quagga.min.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1>NutriScan</h1>
+    </header>
+
+    <div class="camera-container">
+        <video id="video" autoplay></video>
+        <div class="overlay">
+            <div class="instruction">Arahkan barcode ke tengah layar</div>
+            <div class="success-indicator" id="successIndicator"></div>
+        </div>
+        <div class="error-message" id="cameraError" style="display: none;">
+            Gagal mengakses kamera. Mohon periksa izin akses kamera.
+        </div>
+    </div>
+
+    <div id="successIndicator" style="display:none;">Barcode Terbaca!</div>
+
+    <div class="buttons-container">
+        <!-- Tombol menuju input manual -->
+        <a href="manual.html" class="button" id="manualButton">Pindai Manual</a>
+        <!-- Tombol menuju beranda -->
+        <a href="dashboard.html" class="button" id="backButton">Kembali ke Beranda</a>
+    </div>
+
+    <script src="/javascript/proses.js"></script>
+</body>
+</html>

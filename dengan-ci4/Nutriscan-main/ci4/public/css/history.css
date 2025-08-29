@@ -1,0 +1,124 @@
+/* Reset dan font */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Tabel container untuk scroll */
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Supaya ada scroll di layar kecil */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #ff6f61;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #ffe6e1;
+}
+
+/* Tombol hapus */
+form button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c82333;
+}
+
+/* Wrapper tombol kembali */
+.button-wrapper {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(255, 111, 97, 0.4);
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e55b50;
+}
+
+/* Pesan kosong */
+.empty-message {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    margin-top: 40px;
+}
+
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive: cukup scroll, tidak ubah tabel jadi block */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+    }
+
+    table {
+        min-width: 600px; /* supaya scroll muncul */
+    }
+
+    form button {
+        padding: 10px 14px;
+        font-size: 0.95em;
+    }
+
+    .back-button {
+        padding: 10px 20px;
+        font-size: 0.95em;
+    }
+}
