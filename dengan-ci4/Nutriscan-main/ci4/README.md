@@ -1,60 +1,111 @@
-# CodeIgniter 4 Framework
+# 📚 Project Semester 4 – Pemrograman Web 2
 
-## What is CodeIgniter?
+Repo ini berisi rangkaian project **Semester 4 – Pemrograman Web 2**.  
+Project dikembangkan dengan pendekatan bertahap:  
+1. 📰 Artikel Web (CRUD dengan CI4)  
+2. 🥗 NutriScan App (versi awal, tanpa framework)  
+3. 🥗 NutriScan WebApp (versi final, dengan CodeIgniter 4)
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+---
 
-This repository holds the distributable version of the framework.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## 📰 1. Artikel Web (CRUD dengan CI4)
+Proyek awal semester 4 untuk memahami **CodeIgniter 4** melalui aplikasi CRUD sederhana artikel.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+### ✨ Fitur
+- Login & autentikasi
+- CRUD Artikel (Create, Read, Update, Delete)
+- Pencarian artikel
+- Tampilan responsive dengan Bootstrap
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+### 🛠️ Teknologi
+- CodeIgniter 4
+- PHP 8.2
+- MySQL
+- Bootstrap 5
 
-## Important Change with index.php
+---
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+## 🥗 2. NutriScan App (Tanpa Framework)
+Implementasi pertama dari aplikasi NutriScan, dibuat dengan **PHP native + JavaScript**.  
+Tujuannya membangun dasar aplikasi sebelum beralih ke framework.
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+### ✨ Fitur
+- Register & Login sederhana
+- Pemindaian barcode produk (manual / kamera)
+- Informasi nutrisi (kalori, gula)
+- Sistem peringatan warna (🟢🟡🔴)
+- Riwayat pemindaian
 
-**Please** read the user guide for a better explanation of how CI4 works!
+### 🛠️ Teknologi
+- HTML, CSS, JavaScript
+- PHP native
+- IndexDB
+- Open Food Facts API
 
-## Repository Management
+### 📂 Struktur
+- `css/` → Styling halaman  
+- `js/` → Logika interaktif  
+- `html/` → Halaman aplikasi  
+- `php/` → Backend sederhana  
+- `assets/` → Gambar & ikon  
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+---
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+## 🥗 3. NutriScan WebApp (CI4 – Versi Final)
+Versi lanjutan NutriScan yang dibangun menggunakan **CodeIgniter 4** untuk arsitektur MVC yang lebih rapi.
 
-## Contributing
+### ✨ Fitur
+- Semua fitur dari versi sebelumnya
+- Struktur MVC dengan CI4
+- Pengelolaan user & history lebih terstruktur
+- Desain modern & responsif
+- Integrasi penuh dengan **Open Food Facts API**
 
-We welcome contributions from the community.
+### 🛠️ Teknologi
+- CodeIgniter 4 (PHP 8.2)
+- MySQL
+- JavaScript, Bootstrap 5
+- QuaggaJS (scanner barcode)
+- Open Food Facts API
 
-Please read the [*Contributing to CodeIgniter*](https://github.com/codeigniter4/CodeIgniter4/blob/develop/CONTRIBUTING.md) section in the development repository.
+### 📂 Struktur (Ringkas)
 
-## Server Requirements
+- app/Controllers -> Logika aplikasi
+- app/Models -> Query database
+- app/Views -> Tampilan halaman
+- public/ -> Aset publik (CSS, JS, Images)
 
-PHP version 8.1 or higher is required, with the following extensions installed:
 
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
+---
 
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
+## 📊 Database ERD (NutriScan)
+**Tabel utama**:  
+- `users` → menyimpan data pengguna  
+- `scan_history` → menyimpan riwayat pemindaian produk  
 
-Additionally, make sure that the following extensions are enabled in your PHP:
+Relasi:  
+`users.id` → `scan_history.user_id` (One-to-Many)
 
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
+---
+
+## 📽️ Dokumentasi
+- 🎥 Demo Video: [YouTube](https://youtu.be/oP8PMnEmvN0?si=l5yl-JjJKQHIvdDt)  
+- 🎨 Mockup Design: [Figma](https://www.figma.com/design/sOzEong42y12htRO6h4Vm9/Mockup-Nutriscan?node-id=0-1)  
+- 🖼️ Poster Proyek: [Poster NutriScan](https://drive.google.com/file/d/1_VvuvXlZxHOhdg1myhZWVl6iqjUjA6dV/view?usp=sharing)
+
+---
+
+## 👨‍💻 Tim Pengembang
+**Artikel Web CI4**:  
+- Ainun Dwi Permana – Fullstack  
+
+**NutriScan App & WebApp** (Dengan Framwork):  
+- Ainun Dwi Permana – Frontend & Backend  
+- Agus Sunardi – Backend  
+- Andhika Ulhaq Faturrahman – Database ERD  
+- Suci Maolia – Backend  
+
+---
+
+📌 *Seluruh project ini merupakan bagian dari mata kuliah **Pemrograman Web 2 – Semester 4 (Teknik Informatika)**.*
+
