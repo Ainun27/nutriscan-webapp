@@ -2,7 +2,7 @@
 
 **NutriScan WebApp** adalah projek implementasi dari mata kuliah **Web Dasar** semester 3.  
 Aplikasi ini membantu pengguna memindai produk dan menampilkan informasi nutrisi (kalori & gula) dengan sistem peringatan warna.  
-Proyek dibuat menggunakan **HTML, CSS, JavaScript, dan PHP (native, tanpa framework).**
+Proyek dibuat menggunakan **HTML, CSS, JavaScript (native, tanpa framework).**
 
 ---
 
@@ -17,8 +17,8 @@ NutriScan hadir untuk menyederhanakan proses ini dengan:
 
 ## 🚀 Tech Stack
 - **Frontend**: HTML5, CSS3, JavaScript  
-- **Backend**: PHP (native, tanpa framework)  
-- **Database**: MySQL  
+- **Backend**: JavaScript (native, tanpa framework)  
+- **Database**: IndexDB  
 - **Library/API**: QuaggaJS (scanner barcode), Open Food Facts API  
 
 ---
