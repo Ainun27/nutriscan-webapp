@@ -9,9 +9,9 @@ Repo ini berisi **dua versi pengembangan NutriScan**:
 ---
 
 ## 📌 Catatan Penting
-💡 **Ide, konsep, dan rancangan NutriScan sepenuhnya berasal dari Ainun Dwi Permana.**  
-Proyek ini adalah karya pribadi sebagai bentuk inovasi untuk tugas perkuliahan.  
-Tim pengembang lain berperan sebagai kolaborator dalam tahap implementasi & pengembangan teknis.
+💡 **Ide, konsep, dan rancangan NutriScan berasal dari Ainun Dwi Permana.**  
+Meskipun **terinspirasi dari aplikasi serupa yang sudah ada**, NutriScan dibuat sebagai **studi kasus implementasi hasil belajar** dalam mata kuliah.  
+Tim pengembang lain berperan sebagai kolaborator dalam tahap implementasi & pengembangan teknis.  
 
 ---
 
@@ -34,7 +34,7 @@ Tim pengembang lain berperan sebagai kolaborator dalam tahap implementasi & peng
 ---
 
 ## 🛠️ Tech Stack
-- **Semester 3**: HTML, CSS, JavaScript, IndexDB 
+- **Semester 3**: HTML, CSS, JavaScript, IndexedDB  
 - **Semester 4**: CodeIgniter 4, PHP 8.2, MySQL, Bootstrap 5, QuaggaJS, Open Food Facts API  
 
 ---
@@ -56,4 +56,5 @@ Tim pengembang lain berperan sebagai kolaborator dalam tahap implementasi & peng
 
 ---
 
-📌 *NutriScan adalah hasil karya & ide asli dari Ainun Dwi Permana. Tim pengembang lain hanya bertugas sebagai kolaborator untuk implementasi teknis pada tahap pengembangan.*
+📌 *NutriScan adalah hasil karya & ide Ainun Dwi Permana yang terinspirasi dari aplikasi serupa.  
+Proyek ini dipilih sebagai studi kasus untuk implementasi hasil pembelajaran, dengan tim berperan sebagai kolaborator teknis.*
