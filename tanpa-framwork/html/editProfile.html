@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profil - NutriScan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/editProfile.css"> 
+</head>
+<body>
+
+    <header>
+        <h1>Edit Profil</h1>
+    </header>
+
+    <div class="form-container">
+        <h2>Perbarui Informasi Anda</h2>
+
+        <div class="form-group">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Kata Sandi:</label>
+            <input type="password" id="password" required>
+        </div>
+
+        <button class="button" id="saveButton" onclick="saveProfile()">Simpan Perubahan</button>
+    </div>
+
+    <footer>
+        &copy; 2024 NutriScan
+    </footer>
+
+    <script src="/javascript/editProfile.js"></script> <!-- Menghubungkan JavaScript -->
+</body>
+</html>

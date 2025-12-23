@@ -1,0 +1,242 @@
+/* File: history.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #f4f4f9, #e9ecef);
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    position: relative;
+    padding: 40px 20px 100px 20px;
+}
+
+/* Membuat efek container putih di tengah dengan pseudo-element */
+body::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 900px;
+    min-height: calc(100vh - 180px);
+    background-color: white;
+    border-radius: 15px;
+    border: 2px solid #ff6f61;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 0;
+}
+
+/* Semua konten harus di atas background putih */
+h1, table, .button-wrapper, .empty-message {
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    color: #ff6f61;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto 40px;
+    max-width: 900px;
+    padding: 0 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 90%;
+    max-width: 850px;
+    margin: 0 auto 30px;
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+table th {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+table th:first-child {
+    border-top-left-radius: 10px;
+}
+
+table th:last-child {
+    border-top-right-radius: 10px;
+}
+
+table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+}
+
+table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+table tr:hover td {
+    background-color: #f0f0f0;
+}
+
+table td form {
+    margin: 0;
+}
+
+table td button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+table td button:hover {
+    background-color: #e55c50;
+    transform: translateY(-2px);
+}
+
+table td button:active {
+    background-color: white;
+    color: #ff6f61;
+    border: 1px solid #ff6f61;
+    transform: translateY(1px);
+}
+
+.button-wrapper {
+    text-align: center;
+    margin: 30px auto;
+    max-width: 850px;
+    padding: 0 20px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    padding: 14px 35px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #e55c50;
+    transform: translateY(-3px);
+}
+
+.back-button:active {
+    background-color: white;
+    color: #ff6f61;
+    border: 2px solid #ff6f61;
+    transform: translateY(1px);
+}
+
+.empty-message {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin: 60px auto;
+    max-width: 850px;
+}
+
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 2;
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px 100px 10px;
+    }
+
+    body::before {
+        top: 20px;
+        width: 95%;
+        min-height: calc(100vh - 140px);
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    table {
+        width: 95%;
+        font-size: 12px;
+    }
+
+    table th, table td {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    table td button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .back-button {
+        font-size: 1em;
+        padding: 12px 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.7em;
+    }
+
+    table {
+        width: 98%;
+        font-size: 11px;
+    }
+
+    table th, table td {
+        padding: 8px 5px;
+        font-size: 11px;
+    }
+
+    table td button {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+
+    .back-button {
+        font-size: 0.95em;
+        padding: 11px 24px;
+    }
+}

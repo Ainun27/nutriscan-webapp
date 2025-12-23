@@ -1,0 +1,179 @@
+/* Reset standar agar elemen tampak konsisten di berbagai browser */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya umum untuk seluruh body */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #f4f4f9, #e9ecef);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Agar body memenuhi halaman secara vertikal */
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #ff6f61;
+    font-size: 3em;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Kontainer untuk kamera (video) */
+.camera-container {
+    position: relative;
+    max-width: 800px; /* Perbesar ukuran kontainer */
+    margin: 0 auto;
+    border: 5px solid #ff6f61;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Video */
+video {
+    width: 100%;
+    height: auto;
+}
+
+/* Overlay instruksi */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Agar overlay lebih terlihat */
+    padding: 20px;
+}
+
+.instruction {
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Indikator sukses */
+.success-indicator {
+    position: absolute;
+    border: 5px solid green;
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+    top: 10%;
+    left: 10%;
+    display: none;
+    pointer-events: none;
+}
+
+/* Kontainer tombol */
+.buttons-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Tombol utama */
+.buttons-container button, 
+.buttons-container .button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s ease;
+}
+
+/* Tombol dengan latar belakang utama */
+.buttons-container button {
+    background-color: #ff6f61;
+}
+
+.buttons-container button:hover {
+    background-color: #e55c50;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol dengan link */
+.buttons-container .button {
+    background-color: #ff6f61;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.buttons-container .button:hover {
+    background-color: #e55c50;
+}
+
+/* Footer */
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Agar footer tetap di bawah */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #e55c50;
+}
+
+#successIndicator {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 255, 0, 0.7);
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    display: none;
+}
+
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em; /* Ukuran header lebih kecil di layar kecil */
+    }
+
+    .camera-container {
+        max-width: 90%; /* Memastikan kontainer lebih kecil di layar kecil */
+    }
+
+    .buttons-container button {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .instruction {
+        font-size: 1.2em; /* Ukuran instruksi lebih kecil di layar kecil */
+    }
+}

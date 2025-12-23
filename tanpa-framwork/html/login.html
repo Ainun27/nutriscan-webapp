@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - NutriScan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>NutriScan</h1>
+    </header>
+
+    <div class="form-container">
+        <h2>Masuk</h2>
+        <form onsubmit="login(event)">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Kata Sandi:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit" class="button">Masuk</button>
+        </form>
+        <div class="toggle-link">
+            <p>Belum punya akun? <a href="index.html">Daftar di sini</a></p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 NutriScan
+    </footer>
+
+    <script src="/javascript/scripts.js"></script>
+</body>
+</html>

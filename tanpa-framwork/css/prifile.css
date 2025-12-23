@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, #f4f4f9, #e9ecef);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+header h1 {
+    color: #ff6f61;
+    font-size: 3em;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.profile-info {
+    margin-bottom: 20px;
+}
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+.button:hover {
+    background-color: #e55b50;
+}
+
+footer {
+    background-color: #ff6f61;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries untuk Responsivitas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Menyesuaikan ukuran header untuk perangkat lebih kecil */
+    }
+
+    .manual-container {
+        padding: 30px; /* Menyesuaikan padding agar lebih efisien di perangkat kecil */
+        max-width: 90%; /* Memastikan form lebih fleksibel pada layar kecil */
+    }
+
+    .manual-container button {
+        font-size: 1.2em; /* Mengurangi ukuran tombol di perangkat lebih kecil */
+        padding: 16px;
+    }
+
+    .manual-container input {
+        padding: 12px;
+        font-size: 1em; /* Mengurangi ukuran font input di perangkat kecil */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.7em; /* Menyesuaikan ukuran header lebih kecil untuk perangkat ponsel */
+    }
+
+    .manual-container {
+        padding: 20px; /* Mengurangi padding lebih lanjut di layar ponsel */
+    }
+
+    .manual-container button {
+        font-size: 1.1em;
+        padding: 14px;
+    }
+
+    .manual-container input {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
