@@ -41,6 +41,9 @@ Repo ini berisi **dua versi pengembangan NutriScan**:
 ### Halaman Edit Profile
 <img width="1280" height="661" alt="image" src="https://github.com/user-attachments/assets/251dae5f-29f2-46f6-8006-3f96012445a6" />
 
+### Halaman Riwayat Pemindaian
+<img width="1366" height="709" alt="image" src="https://github.com/user-attachments/assets/7248c8c2-cc3b-4748-98fa-a030f414e2d3" />
+
 ## 📌 Catatan Penting
 💡 **Ide, konsep, dan rancangan NutriScan berasal dari Ainun Dwi Permana.**  
 Meskipun **terinspirasi dari aplikasi serupa yang sudah ada**, NutriScan dibuat sebagai **studi kasus implementasi hasil belajar** dalam mata kuliah.  
